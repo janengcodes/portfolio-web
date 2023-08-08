@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Jane Nguyen's Portfolio</title>
+</head>
+<body id="body">
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <div id="content-wrap">
+            <header>
+                  <nav>
+                    <a id="homeBtn" href="index.html">J@Ne</a>
+                    <ul>
+                      <div class="navBar">
+                        <div class="navBtns">
+                          <a href="experience.html" class="current-page">01. Experience</01.></a>
+                          <a href="projects.html">02. Projects</a>
+                          <a href="about.html" class="contactBtn">03. About</a>
+                        </div>
+                      </div>
+                    </ul>
+                </nav>
+            </header>
+            <!-- <div class="small"></div> -->
+    </div>
+    <main>
+      <h1 id="experience-heading">Experiences</h1>
+      <!-- YALE -->
+      <div class="snapshot-grid">
+        <div class="snapshot-grid-item summary">
+          <h3 class="green ">Worked on species distribution modeling for seasonal documentation and marine life.</h3>
+        <br>
+          <p class="snapshot-grid-item details inside" id="details-yale">Details</p>
+        </div>
+                <div class="snapshot-grid-item place"><h1 class="inside">Yale University</h1><h class="inside"2>Data Science Intern</h2></div>
+        <div class="snapshot-grid-item role"></div>
+        <div class="plot2 inside"><img class="plotSDM" src="photos/plotSDM.png" alt="plot with raster data and expert range map"></div>
+      </div>
+      <!-- YALE DETAILS -->
+      <div class="details-grid inside display-none" id="yale-grid">
+          <div class="description-detail-1 inside">
+            <h3 class="inside">Summary of Work</h3>
+            <p>
+              At Yale, I was given the opportunity to explore the vast field of data science and how it relates to the environment.
+              <br>
+              I performed data cleaning and deployed a machine learning model on a cactus species and was able to generate occurence data for it under bioclimatic variables and climate predictions.
+              <br>
+              Furthermore, we were tasked with rendering reports for seasonal and marine data, where we generated synthetic data, created project configurations, and debugged domain data from a workflow! In the end, we were able to graph complex spatial and raster data along with range maps.
+            </p>
+          </div>
+          <div class="inside" id="image-detail-1"><img class="plotMT" src="photos/plotMT.png" alt="occurrences with mean temps"></div>
+          <div class="date-detail-1 inside">May 2023 - Current</div>
+      </div>
+
+      <!-- FOUNDRY SIX -->
+        <div class="snapshot-grid">
+        <div class="snapshot-grid-item place"><h1 class="inside">Foundry Six</h1><h class="inside"2>Augumented Reality Development Intern</h2></div>
+        <div class="snapshot-grid-item summary" id="foundry-six-snapshot-grid-item">
+          <h3>Prototyped a mini-game from scratch using WebAR technologies.</h3>
+        <br>
+          <p class="snapshot-grid-item details inside" id="details-foundry-six">Details</p>
+        </div>
+        <div class="snapshot-grid-item role"></div>
+        <div class="foundry-six-logo-class inside"><img id="foundry-six-logo" src="photos/foundry-six-logo.png" alt="plot with raster data and expert range map"></div>
+      </div>
+
+      <!-- FOUNDRY SIX DETAILS -->
+        <div class="details-grid inside display-none" id="foundry-six-grid">
+          <div class="description-detail-1 inside">
+            <h3 class="inside">Summary of Work</h3>
+              <p>
+              Foundry Six gave me the opportunity to protype and research a new platform, 8th Wall, which could potentially used in their AR development projects. 
+              <br> <br>
+              Over the course of 3 months, I prototyped a tower defense style game with hold-and-drag and auto-fire weapons. I implemented a small weapon inventory, coin-rewards-system, and two levels with varying weapon platforms, enemy types, and object pooling.
+              <br>
+              </p>
+          </div>
+          <div class="fs-detail-photos inside">
+            <img id="fs-1" src="photos/fs-1.jpg" alt="AR game photo 1">
+            <img id="fs-2" src="photos/fs-2.PNG" alt="AR game photo 2">
+          </div>
+          <div class="date-detail-2 inside">Mar 2023 - June 2023</div>
+        </div>
+      </div>
+
+      <!-- JOC -->
+        <div class="snapshot-grid">
+        <div class="snapshot-grid-item place"><h1 class="inside">Joy of Coding</h1><h class="inside"2>Coding Coach</h2></div>
+        <div class="snapshot-grid-item summary" id="foundry-six-snapshot-grid-item">
+          <h3>Taught students Python in a 900 student course and guided them through an AI project for snapchat lenses.</h3>
+        <br>
+          <p class="snapshot-grid-item details inside" id="details-joc">Details</p>
+        </div>
+        <div class="snapshot-grid-item role"></div>
+        <div class="joc-logo-class inside"><img class="joc-logo inside" src="photos/joc-logo.png" alt="joy of coding logo"></div>
+      </div>
+
+      <!-- JOC DETAILS --> 
+        <div class="details-grid inside display-none" id="joc-grid">
+          <div class="description-detail-1 inside">
+            <h3 class="inside">Summary of Work</h3>
+            <p> I employed a “coaching instead of telling” method to push students through a productive struggle in the process of debugging their code for a better understanding of Python functions, conditionals, loops, and libraries.</p>
+          </div>
+          <div class="fs-detail-photos inside">
+            <img id="fs-1" src="photos/joc-photo.png" alt="cartoon girl sitting on computer">
+          </div>
+          <div class="date-detail-2 inside">June 2023 - August 2023</div>
+        </div>
+      </div>
+
+    </main>
+    </div> 
+    <script src="js/script.js"></script>
+</body>
+</html>
