@@ -222,7 +222,7 @@ nav {
 .details-grid {
   display: grid;
   background-color: aliceblue;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.3fr;
   grid-template-rows: 360px 70px;
   margin-left: 150px;
   margin-right: 150px;
@@ -238,7 +238,7 @@ nav {
   grid-row: 1;
   font-size: 16px;
   padding-right: 50px;
-  padding-left: 10px;
+  padding-left: 40px;
   padding-top: 40px;
   line-height: 23px;
 } 
@@ -258,6 +258,7 @@ nav {
   text-align: right;
   padding-right: 30px;
   padding-top: 10px;
+  font-size: 15px;
 }
 
 .plotMT {
@@ -460,7 +461,20 @@ background-color: aliceblue;
   background-color: var(--mint-green);
 }
 
-.description-detail-1 p {
-  background-color: #f7d488;
-  padding: 7px;
+
+#yale-skills {
+  background-color: var(--pink);
+  text-align: center;
+  padding: 10px;
+}
+
+.work-summary {
+  background-color: #CFFFE5;
+  font-family: 'Chivo Mono', monospace;
+  padding: 5px;
+}
+
+.work-summary-p {
+  background-color: #CFFFE5;
+  padding: 5px;
 }

@@ -12,7 +12,10 @@
 const detailsYale = document.getElementById('details-yale')
 detailsYale.addEventListener("click", function () {
     const yaleGrid = document.getElementById("yale-grid");
+    const yaleSkills = document.getElementById("yale-skills");
      yaleGrid.classList.remove("display-none");
+     yaleSkills.classList.remove("display-none");
+     detailsYale.classList.add("display-none");
 })
 
 const detailsFS = document.getElementById('details-foundry-six')
