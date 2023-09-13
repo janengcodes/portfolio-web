@@ -17,6 +17,11 @@
     grid-row: 1;
 }
 
+.project-link {
+    grid-column: 4/6;
+    grid-row: 1;
+    max-width: 5%;
+}
 .project-club-role {
     grid-column: 2/4;
     grid-row: 2;
