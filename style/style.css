@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=IBM+Plex+Mono:ital,wght@1,300&family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono");
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 * {
-  /* font-family: 'Chivo Mono', monospace; */
-  font-family: "Inter", sans-serif;
-  color: #644536;
-  background-color: #dfd9e2;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 
 /* FOOTER */
@@ -199,8 +198,12 @@ nav {
 }
 
 #experience-heading {
+  /* italics */
+  font-style: italic;
   text-align: center;
   font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .align-center {
