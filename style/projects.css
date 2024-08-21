@@ -11,6 +11,8 @@ html, body {
     width: 100%;    
     background-color: #DCD0F4;
     margin-left: 1%;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .proj-topic {
@@ -35,5 +37,37 @@ html, body {
     color: #000000;
     font-weight: 600;
     padding: 20px;
+}
 
+.project-cards {
+    display: flex;
+    justify-content: space-evenly;
+
+
+    width: 100%;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.proj-title {
+    padding: 20px;
+    text-align: center;
+    grid-row: 1;
+    border-bottom: #000000 1px solid;
+    font-size: 20px;
+}
+
+.proj-des {
+    padding: 20px;
+    margin: 20px;
+    grid-row: 2;
 }
