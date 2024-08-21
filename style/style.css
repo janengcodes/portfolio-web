@@ -116,9 +116,8 @@ nav {
 #homeBtn {
   padding-left: 2%;
   text-decoration: none;
-  font-style: italic;
   font-size: 32px;
-  font-weight: 800;
+  color: #000000;
 }
 
 .navBar {
@@ -129,6 +128,7 @@ nav {
 .navBar a {
   padding: 13px;
   text-decoration: none;
+  color: #000000;
 }
 
 .navBar a:hover,
