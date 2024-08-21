@@ -2,6 +2,7 @@ html, body {
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
     width: 100%; /* Ensure the body takes up the full width */
+    height: 150%;
   }
 
 .nav-bar-projects {
@@ -42,15 +43,14 @@ html, body {
 .project-cards {
     display: flex;
     justify-content: space-evenly;
-
-
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .project-card {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: fit-content(20%) fit-content(10%) fit-content(70%);
     background-color: white;
     border-radius: 10px;
     width: 30%;
@@ -66,8 +66,17 @@ html, body {
     font-size: 20px;
 }
 
-.proj-des {
-    padding: 20px;
-    margin: 20px;
+.proj-skills {
     grid-row: 2;
+    border-bottom: black 1 px solid;
+    text-align: center;
+    padding: 5px;
+
+    background-color: #BBEEC3;
+}
+.proj-des {
+
+    margin: 10px;
+    margin-top: 20px;
+    grid-row: 3;
 }

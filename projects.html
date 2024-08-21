@@ -41,41 +41,80 @@
     </nav>
   </main>
 
+    <!-- OS Projects -->
     <section id="os">
       <p class="project-type">Operating Systems</p>
       <div class="project-cards">
         <div class="project-card">
           <div class="proj-title">Network File Server</div>
-          <div class="proj-des">Details</div>
+          <div class="proj-skills">C++</div>
+          <div class="proj-des">
+            I created a multi-threaded, secure file server similar to a Unix file system that users can interact with.
+            Multiple users can create and edit complex files at once. To handle multiple client connections
+            securely, I implemented socket communication, data processing, and safe threads.
+          </div>
         </div>
+
         <div class="project-card">
-          <div class="proj-title">Network File Server</div>
-          <div class="proj-des">Details</div>
+          <div class="proj-title">Pager</div>
+          <div class="proj-skills">C++</div>
+          <div class="proj-des">
+            Created a pager, which handles virtual memory requests for applications. Handled read faults, 
+            write faults, and address space destruction using simulated CPU’s MMU (memory management unit), physical memory, and disk.
+          </div>
         </div>
+
         <div class="project-card">
-          <div class="proj-title">Network File Server</div>
-          <div class="proj-des">Details</div>
+          <div class="proj-title">Thread Library</div>
+          <div class="proj-skills">C++, Linux</div>
+          <div class="proj-des">Implemented a thread library with thread, mutex, and condition variable functionalities using Linux libraries on C++. 
+            Created a robust error handling system for misbehaving user programs. Handled timer interrupts on an executing CPU. </div>
         </div>
       </div>
     </section>
 
+    <!-- Web Dev/App Dev -->
     <section id="web-dev">
       <p class="project-type">Web & App Development</p>
+
       <div class="project-cards">
+
         <div class="project-card">
-          <div class="proj-title">Network File Server</div>
-          <div class="proj-des">Details</div>
+          <div class="proj-title">Scraps</div>
+          <div class="proj-skills">AWS, Flask, Node.js, React.js, Google Gemini API, JavaScript, Python, SQL, HTML/CSS</div>
+          <div class="proj-des">
+            Led a team of 10 students to develop a web app that generates unique food recipes from ingredients that a user already has.
+            Developed a backend with page routing and client-server communication. Analyzed and cleaned a recipe data set to train Google 
+            Gemini's AI model, generated recipes with Gemini's API. Designed data infrastructure with SQL and created a responsive interface
+            with JavaScript, React, HTML/CSS.
+          </div>
         </div>
-        <div class="project-card">
-          <div class="proj-title">Network File Server</div>
-          <div class="proj-des">Details</div>
-        </div>
-        <div class="project-card">
-          <div class="proj-title">Network File Server</div>
-          <div class="proj-des">Details</div>
+
+
+      <div class="project-card">
+        <div class="proj-title">Search Engine</div>
+        <div class="proj-skills">AWS, Flask, Node.js, REST API, JSON, Python, JavaScript, HTML/CSS</div>
+        <div class="proj-des">
+          Created a scalable search engine similar to Google that returns a segmented inverted index of web pages.
+          Developed a pipeline of efficient MapReduce algorithms to perform text/link analysis and parallel data processign to 
+          return search results. Implemented a REST API app that retrieves data in JSON formate, created a UI for users 
+          to type queries and browse searches.
         </div>
       </div>
-    </section>
+
+    <div class="project-card">
+      <div class="proj-title">Map Reduce</div>
+      <div class="proj-skills">AWS, Flask, Node.js, Python</div>
+      <div class="proj-des">
+         Created a multi-process, multi-threaded server that executes user-submitted MapReduce jobs.
+         Implemented a framework that handles job scheduling, data partitioning, and fault tolerance.
+         Created a server with networking functions and TCP/UDP sockets for processes to listen for incoming messages
+         Parsed byte messages between multiple threads into JSON.
+        </div>
+    </div>
+
+    
+  </div>
 
     <section id="algos">
       <p class="project-type">Algorithms</p>
