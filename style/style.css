@@ -1,10 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=IBM+Plex+Mono:ital,wght@1,300&family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono");
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Serif+Text:ital@0;1&display=swap');
+
+
 * {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
+}
+
+/* HOME PAGE GRID */
+.home-grid {
+  display: grid;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 10px; /* Gap between grid items (optional, adjust as needed) */
+}
+
+.home-grid-left-side {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.home-grid-left-side-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center; /* Horizontally centers items in their grid cells */
+  align-items: center;   /* Vertically centers items in their grid cells */
+}
+
+.grid-item {
+  background-color: #F3E0C3;
+  padding: 6px;
+  padding-left: 8px;
+  padding-right: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 80%;
+  text-align: center;
+}
+
+#sw-intern {
+  background-color: #ECC3F3;
+}
+
+#proj-lead {
+  background-color: #C9FED5;
+}
+
+#mktg-dir {
+  background-color: #C9EEFE;
+}
+#experience-heading {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+
+#profile-1 {
+  margin-top: 15%;
+  margin-left: 15%;
+  max-width: 90%;
+  border-radius: 10px;
 }
 
 /* FOOTER */
@@ -16,7 +78,6 @@
 
 #content-wrap {
   padding-top: 2.5remm;
-  padding-bottom: 2.5rem; /* Footer height */
 }
 
 #footerBox {
@@ -50,13 +111,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: solid 1px black;
 }
 
 #homeBtn {
   padding-left: 2%;
   text-decoration: none;
-  font-family: "IBM Plex Mono", monospace;
   font-style: italic;
   font-size: 32px;
   font-weight: 800;
@@ -70,7 +129,6 @@ nav {
 .navBar a {
   padding: 13px;
   text-decoration: none;
-  font-family: "IBM Plex Mono", monospace;
 }
 
 .navBar a:hover,
@@ -87,14 +145,6 @@ nav {
   font-size: 60px;
 }
 
-#blurb {
-  text-align: center;
-  display: block;
-  padding-left: 17%;
-  padding-right: 17%;
-  line-height: 27px;
-}
-
 #role {
   font-size: 20px;
   background-color: #f9b5ac;
@@ -105,15 +155,6 @@ nav {
   margin-left: 15%;
   margin-right: 15%;
   grid-template-columns: repeat(3, 1fr); /* 2 columns with equal width */
-  gap: 10px; /* Gap between grid items (optional, adjust as needed) */
-}
-
-.home-grid {
-  display: grid;
-  margin-top: 2%;
-  margin-left: 15%;
-  margin-right: 15%;
-  grid-template-columns: repeat(2, 1fr);
   gap: 10px; /* Gap between grid items (optional, adjust as needed) */
 }
 
@@ -135,16 +176,6 @@ nav {
 }
 #grid-foundry-six {
   background-color: var(--pink);
-}
-
-.grid-item {
-  /* Add styles for grid items here, for example: */
-  border: 1px solid #000;
-  padding: 10px;
-  text-align: center;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 20px;
-  font-weight: 800;
 }
 
 #grid-ecodata {
@@ -195,15 +226,6 @@ nav {
   margin-left: 10%;
   align-self: center;
   filter: drop-shadow(-2px -2px 10px var(--brown));
-}
-
-#experience-heading {
-  /* italics */
-  font-style: italic;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 500;
-  letter-spacing: 2px;
 }
 
 .align-center {
