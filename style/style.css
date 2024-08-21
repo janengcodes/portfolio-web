@@ -402,8 +402,14 @@ nav {
 
 .outer-snapshot-grid-conmed {
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 70% 30%;
 }
+
+.outer-snapshot-grid-yale {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
 .snapshot-grid {
   display: grid;
   grid-template-rows: 1fr 1fr 4fr;
@@ -411,12 +417,14 @@ nav {
   margin-top: 4%;
   background-color: white;
   margin-left: 4%;
-  margin-right: 150px;
   border-radius: 10px;
   border: 2px solid black;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
+#yale-snapshot-grid {
+  margin: 4%;
+}
 .snapshot-grid div {
   padding-top: 10px;
   padding-left: 20px;
@@ -435,9 +443,7 @@ nav {
   margin-right: 5%;
   padding: 10px;
   font-size: 15px;
-  background-color: #FFA6C1;
   justify-self: end;
-  border-radius: 10px;
 }
 
 #conmed-description {
