@@ -45,6 +45,7 @@ html, body {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 2%;
 }
 
 .project-card {
@@ -54,6 +55,7 @@ html, body {
     background-color: white;
     border-radius: 10px;
     width: 30%;
+    margin-bottom: 2%;
     border: 1px solid #000000;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
