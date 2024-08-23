@@ -147,6 +147,10 @@ nav {
     flex-direction: column;
     align-items: center;
   }
+
+  .home-grid-left-side-2, #profile-1 {
+    visibility: hidden;
+  }
 }
 
 #homeBtn {
@@ -484,6 +488,15 @@ nav {
   max-width: 70%;
 }
 
+@media only screen and (max-width: 600px) {
+  .outer-snapshot-grid-conmed, .outer-snapshot-grid-yale {
+    display: block;
+  }
+
+  #conmed-snapshot-grid, #yale-snapshot-grid {
+    max-width: 90%;
+  }
+}
 
 
 .snapshot-grid-item {
