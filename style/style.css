@@ -283,6 +283,23 @@ nav {
   height: 70%;
 }
 
+@media only screen and (max-width: 600px) {
+  .about-container {
+    display: block;
+  }
+
+  .about-images {
+    display: block;
+    visibility: hidden;
+  }
+
+  .about-text {
+    grid-row: 1;
+  }
+  
+}
+
+
 .about-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
