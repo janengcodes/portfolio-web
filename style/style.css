@@ -134,6 +134,21 @@ nav {
   margin-right: 1%;
 }
 
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 #homeBtn {
   margin-left: 1%;
   text-decoration: none;
