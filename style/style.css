@@ -46,6 +46,7 @@ body {
   align-items: center;   /* Vertically centers items in their grid cells */
 }
 
+
 .grid-item {
   background-color: #F3E0C3;
   padding: 6px;
@@ -59,6 +60,7 @@ body {
   font-family: "DM Mono", monospace;
   font-weight: 400;
   font-style: normal;
+  font-size: 90%;
 }
 
 #sw-intern {
@@ -87,6 +89,61 @@ body {
   border-radius: 10px;
   border: 2px solid black;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media only screen and (max-width: 1308px) {
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .home-grid-left-side-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center; /* Horizontally centers items in their grid cells */
+    align-items: center;   /* Vertically centers items in their grid cells */
+  }
+
+  #profile-1 {
+    max-width: 80%;
+  } 
+
+  .grid-item {
+    margin-top: 10%;
+
+  }
+}
+
+
+
+@media only screen and (max-width: 1021px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile-1 {
+    display: none;
+  }
+
+  .home-grid {
+    display: block;
+
+  }
+
 }
 
 /* FOOTER */
@@ -134,24 +191,6 @@ nav {
   margin-right: 1%;
 }
 
-@media only screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: smaller;
-  }
-
-  .navBar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .home-grid-left-side-2, #profile-1 {
-    visibility: hidden;
-  }
-}
 
 #homeBtn {
   margin-left: 1%;
