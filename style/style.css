@@ -14,7 +14,6 @@ html, body {
   margin: 0;
 }
 
-
 body {
   background: radial-gradient(circle 500px at 40% 60%, #DDD0F4, white);
 }
@@ -92,6 +91,9 @@ body {
 }
 
 
+.name-img {
+  max-width: 37%;
+}
 
 @media only screen and (max-width: 1308px) {
 
@@ -178,52 +180,34 @@ div.skip a:focus {
   top: 20px;
 }
 
-*:focus {
-  background-color: black;
-}
-
 /* HEADER */
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 1%;
+  margin-right: 7%;
+  margin-left: 5%;
 }
 
 
-#homeBtn {
-  margin-left: 1%;
-  text-decoration: none;
-  font-size: 32px;
-  color: #000000;
-  padding: 5px;
-}
-
-#homeBtn:hover {
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-
-}
 
 .navBar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: large;
 }
 
 .navBar a {
-  padding: 13px;
+  padding: 30px;
   text-decoration: none;
   color: #000000;
 }
 
 .navBar a:hover,
 .current-page {
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  /* border: #644536 1px solid; */
+  text-decoration: underline;
 }
 
 /* HOMEPAGE BODY*/
@@ -271,17 +255,6 @@ nav {
 }
 #grid-ari {
   background-color: var(--orange);
-}
-
-#grid-ari:hover,
-#grid-ecodata:hover,
-#grid-yale:hover,
-#grid-joc:hover,
-#grid-foundry-six:hover {
-  background-color: var(--black);
-  border: var(--black);
-  border-radius: 10px;
-  color: white;
 }
 
 #about-heading {
