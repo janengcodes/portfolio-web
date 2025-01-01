@@ -9,6 +9,10 @@
   font-optical-sizing: auto;
 }
 
+html {
+  overflow-y: scroll; /* Ensures a scrollbar is always present */
+}
+
 html, body {
   height: 100%;
   margin: 0;
