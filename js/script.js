@@ -1,37 +1,112 @@
-// const cursorSmall = document.querySelector('.small');
-// const oldBody = document.getElementById('body')
-// const positionElement = (e)=> {
-//   const mouseY = e.clientY;
-//   const mouseX = e.clientX;
-//     oldBody.classList.add('newClass');
-//   cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-// }
+class RingDot {
+  constructor() {
+    this.root = document.body;
+    this.cursor = document.querySelector(".curzr");
+    this.dot = document.querySelector(".curzr-dot");
 
-// window.addEventListener('mousemove', positionElement)
+    this.pointerX = 0;
+    this.pointerY = 0;
+    this.cursorSize = 20;
 
-const detailsYale = document.getElementById('details-yale')
-detailsYale.addEventListener("click", function () {
-    const yaleGrid = document.getElementById("yale-grid");
-    const yaleSkills = document.getElementById("yale-skills");
-     yaleGrid.classList.remove("display-none");
-     yaleSkills.classList.remove("display-none");
-     detailsYale.classList.add("display-none");
-})
+    this.cursorStyle = {
+      boxSizing: 'border-box',
+      position: 'fixed',
+      display: 'flex',
+      top: `${this.cursorSize / -2}px`,
+      left: `${this.cursorSize / -2}px`,
+      zIndex: '2147483647',
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: `${this.cursorSize}px`,
+      height: `${this.cursorSize}px`,
+      backgroundColor: '#fff0',
+      boxShadow: '0 0 0 1.25px #111920, 0 0 0 2.25px #F2F5F8',
+      transition: '10ms',
+      borderRadius: '50%',
+      userSelect: 'none',
+      pointerEvents: 'none',
+      opacity: 0,
+    };
 
-const detailsFS = document.getElementById('details-foundry-six')
-detailsFS.addEventListener("click", function () {
-    const fsGrid = document.getElementById('foundry-six-grid');
-    fsGrid.classList.remove("display-none");
-} )
+    this.dotStyle = {
+      boxSizing: 'border-box',
+      position: 'fixed',
+      zIndex: '2147483647',
+      width: '4px',
+      height: '4px',
+      backgroundColor: '#111920',
+      boxShadow: '0 0 0 1px #F2F5F8',
+      borderRadius: '50%',
+      userSelect: 'none',
+      pointerEvents: 'none',
+      opacity: 0,
+    };
 
-const detailsJOC = document.getElementById("details-joc");
-detailsJOC.addEventListener("click", function () {
-  const jocGrid = document.getElementById("joc-grid");
-  jocGrid.classList.remove("display-none"); 
-});
+    this.init(this.cursor, this.cursorStyle);
+    this.init(this.dot, this.dotStyle);
+  }
 
-const viewMore1 = document.getElementById("read-more-1"); 
-viewMore1.addEventListener("click", function () {
-  const jocGrid = document.getElementById("project-skills-1");
-  jocGrid.classList.remove("display-none");
-});
+  init(el, style) {
+    Object.assign(el.style, style);
+  }
+
+  move(event) {
+    this.cursor.style.opacity = 1;
+    this.dot.style.opacity = 1;
+    this.cursor.removeAttribute("hidden");
+
+    // Check if the target is an image or other interactive element
+    if (
+      event.target.localName === 'button' ||
+      event.target.localName === 'a' ||
+      event.target.localName === 'img' || // Add image condition
+      event.target.onclick !== null ||
+      event.target.className.includes('curzr-hover')
+    ) {
+      this.hover(40); // Change the radius for hovering
+    } else {
+      this.hoverout();
+    }
+
+    this.pointerX = event.pageX + this.root.getBoundingClientRect().x;
+    this.pointerY = event.pageY + this.root.getBoundingClientRect().y;
+
+    this.cursor.style.transform = `translate3d(${this.pointerX}px, ${this.pointerY}px, 0)`;
+  }
+
+  hover(radius) {
+    this.cursor.style.width = this.cursor.style.height = `${radius}px`;
+    this.cursor.style.top = this.cursor.style.left = `${radius / -2}px`;
+  }
+
+  hoverout() {
+    this.cursor.style.width = this.cursor.style.height = `${this.cursorSize}px`;
+    this.cursor.style.top = this.cursor.style.left = `${this.cursorSize / -2}px`;
+  }
+
+  click() {
+    this.cursor.style.transform += ` scale(0.75)`;
+    setTimeout(() => {
+      this.cursor.style.transform = this.cursor.style.transform.replace(` scale(0.75)`, '');
+    }, 35);
+  }
+
+  remove() {
+    this.cursor.remove();
+    this.dot.remove();
+  }
+}
+
+(() => {
+  const cursor = new RingDot();
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.onmousemove = function (event) {
+      cursor.move(event);
+    };
+    document.onclick = function () {
+      cursor.click();
+    };
+  } else {
+    cursor.remove();
+  }
+})();
