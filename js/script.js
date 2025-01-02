@@ -21,7 +21,7 @@ class RingDot {
       height: `${this.cursorSize}px`,
       backgroundColor: '#fff0',
       boxShadow: '0 0 0 1.25px #111920, 0 0 0 2.25px #F2F5F8',
-      transition: '10ms',
+      transition: '100ms',
       borderRadius: '50%',
       userSelect: 'none',
       pointerEvents: 'none',
